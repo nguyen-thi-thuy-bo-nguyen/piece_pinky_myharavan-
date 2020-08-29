@@ -1,0 +1,667 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/menu.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/tindetail.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--menu-->
+
+        <div class="menu">
+            <!-- menu-mobile -->
+            <div class="menu-mobile-container">
+                <div class="menu-mobile-width">
+                    <button class="menu-mobile-content" onclick="over()">menu</button>
+
+                    <a class="cart-mobile-content" href="gio_hang.html">
+                        Giỏ hàng
+                        <span id="cart-out">0</span>
+                    </a>
+                </div>
+                <div class="content-menu-column">
+                    <ul>
+                        <li>
+                            <a href="trangchu.html">trang chủ</a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="sanpham.html">sản phẩm</a>
+                            <span class="mobile-trigger">+</span>
+                            <div class="menu-mobile-item menu-child">
+                                <ul>
+                                    <li>
+                                        <a href="sanpham.html"> <span>Bánh sinh nhật</span></a>
+                                    </li>
+                                    <li>
+                                        <div class="accordion-item">
+                                            <a href="sanpham.html"> <span>bánh ngọt không đường</span></a>
+                                            <span class="mobile-trigger">+</span>
+                                            <div class="menu-mobile-item">
+                                                <ul>
+                                                    <li>
+                                                        <a href="sanpham.html">Bánh cà rốt cổ điển </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="sanpham.html"> Bánh gừng </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="sanpham.html"> Bánh nướng nhỏ màu vàng</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="sanpham.html">Bánh cuộn Hawaii</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="sanpham.html">Bánh snack chuối</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accordion-item">
+                                            <a href="sanpham.html"> <span>bánh cưới</span></a>
+                                            <span class="mobile-trigger">+</span>
+                                            <div class="menu-mobile-item">
+                                                <ul>
+                                                    <li><a href="sanpham.html"> Bánh Angel Food </a></li>
+                                                    <li><a href="sanpham.html">Bánh Battenberg</a></li>
+                                                    <li><a href="sanpham.html"> Bánh sô-cô-la</a></li>
+                                                    <li><a href="sanpham.html">Bánh có tầng </a></li>
+                                                    <li><a href="sanpham.html">Bánh ga tô dâu</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="sanpham.html">công thức</a>
+                            <span class="mobile-trigger">+</span>
+                            <div class="menu-mobile-item menu-child">
+                                <ul>
+                                    <li><a href="sanpham.html">Kem xoay tròn </a></li>
+                                    <li><a href="sanpham.html">Kem chanh</a></li>
+                                    <li><a href="sanpham.html">Đường Maple</a></li>
+                                    <li><a href="sanpham.html">Mocha Latte</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="tin_tuc.html">tin tức</a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="lien_ket.html">liên kết</a>
+                            <span class="mobile-trigger">+</span>
+                            <div class="menu-mobile-item menu-child">
+                                <ul>
+                                    <li><a href="lien_ket.html">Giới thiệu</a></li>
+                                    <li><a href="lien_he1.html">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- menu màn hình lớn -->
+            <div class="background-container">
+                <div class="background-menu-container">
+                    <div class="background-menu">
+                        <div class="logo">
+                            <a href="trangchu.html"><img src="http://theme.hstatic.net/1000281673/1000364229/14/logo.png?v=1629" /></a>
+
+                        </div>
+                        <div class="content-menu">
+                            <ul>
+                                <li>
+                                    <a href="trangchu.html">
+                                        trang chủ
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="sanpham.html"> sản phẩm </a>
+
+                                    <div class="dropdown-content width-mega1">
+                                        <ul class="mega-menu border-radius mega-menu-sp">
+                                            <li class="mega-menu-child mega-menu-child-1">
+                                                <div class="title-mega-menu-child">
+                                                    <a href="sanpham.html"><span> Bánh sinh nhật </span> </a>
+                                                </div>
+                                                <div class="content-mega-menu-child">
+                                                    <a href="sanpham.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_3_large.jpg" />
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="mega-menu-child">
+                                                <div class="title-mega-menu-child">
+                                                    <a href="sanpham.html"> <span>bánh ngọt không đường</span></a>
+                                                </div>
+
+                                                <ul class="content-mega-menu-child">
+                                                    <li><a href="sanpham.html">bánh cà rốt cổ điển </a></li>
+                                                    <li><a href="sanpham.html">bánh gừng</a></li>
+                                                    <li><a href="sanpham.html"> bánh nướng nhỏ màu vàng</a></li>
+                                                    <li><a href="sanpham.html">bánh cuộn Hawaii</a></li>
+                                                    <li><a href="sanpham.html">bánh snack chuối</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-child">
+                                                <div class="title-mega-menu-child">
+                                                    <a href="sanpham.html"> <span>bánh cưới</span></a>
+                                                </div>
+
+                                                <ul class="content-mega-menu-child">
+                                                    <li><a href="sanpham.html">bánh angle food </a></li>
+                                                    <li><a href="sanpham.html">bánh pattenberg</a></li>
+                                                    <li><a href="sanpham.html"> bánh sô-cô-la</a></li>
+                                                    <li><a href="sanpham.html">bánh có tầng</a></li>
+                                                    <li><a href="sanpham.html">bánh gato dâu</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="sanpham.html">công thức</a>
+                                    <div class="dropdown-content width-mega2">
+                                        <ul class="mega-menu border-radius mega-menu-ct">
+                                            <li class="mega-menu-child mega-menu-child-1">
+                                                <div class="title-mega-menu-child">
+                                                    <a href="sanpham.html"><span> kem xoay tròn </span> </a>
+                                                </div>
+                                                <div class="content-mega-menu-child">
+                                                    <a href="sanpham.html">
+                                                        <img src="https://file.hstatic.net/1000281673/collection/curl.jpg" />
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="mega-menu-child mega-menu-child-1">
+                                                <div class="title-mega-menu-child">
+                                                    <a href="sanpham.html"><span> kem chanh </span> </a>
+                                                </div>
+                                                <div class="content-mega-menu-child">
+                                                    <a href="sanpham.html"><img src="https://file.hstatic.net/1000281673/collection/gree.jpg" />
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="mega-menu-child mega-menu-child-1">
+                                                <div class="title-mega-menu-child">
+                                                    <a href="sanpham.html"><span>đường maple</span> </a>
+                                                </div>
+                                                <div class="content-mega-menu-child">
+                                                    <a href="sanpham.html"><img src="https://file.hstatic.net/1000281673/collection/yellow.jpg" />
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="mega-menu-child mega-menu-child-1">
+                                                <div class="title-mega-menu-child">
+                                                    <a href="sanpham.html"><span> mocha latte</span> </a>
+                                                </div>
+                                                <div class="content-mega-menu-child">
+                                                    <a href="sanpham.html"><img src="https://file.hstatic.net/1000281673/collection/blu.jpg" />
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="tin_tuc.html">tin tức</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="lien_ket.html">liên kết</a>
+                                    <div class="dropdown-content width-mega3">
+                                        <div class="mega-menu-lk border-radius mega-menu">
+                                            <ul>
+                                                <li class="mega-menu-child content-mega-menu-child">
+                                                    <a href="lien_ket.html">Giới thiệu</a>
+                                                </li>
+                                                <li class="mega-menu-child content-mega-menu-child">
+                                                    <a href="lien_he1.html">Liên hệ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="button-menu-content">
+                                <div>
+                                    <a href="#" id="searchMenu">
+                                        <span class="fa fa-search" aria-hidden="true "> </span>
+                                    </a>
+                                </div>
+                                <div id="cart-info">
+                                    <a href="#"><img src="http://theme.hstatic.net/1000281673/1000364229/14/minicart.png?v=1629 " /></a>
+                                    <div class="cart-menu">
+                                        <div id="cart-choose">
+                                            <div class="cart-menu-pro">
+                                                <div class="cart-menu-content">
+                                                    <ul>
+                                                        <li>
+
+                                                            <a href="detail.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_1_small.jpg" alt=""></a>
+                                                            <div class="pro-detail">
+                                                                <p class="pro-name"> <a href="detail.html"> A World of Cup Cake
+                                                                        Hồng/To</a></p>
+                                                                <div class="price-item d-flex">
+                                                                    <span class="price-pro money ">250,000</span>
+                                                                    <span class="number-pro number">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="move-pro"><span class="fa fa-remove"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="detail.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_1_small.jpg" alt=""></a>
+                                                            <div class="pro-detail">
+                                                                <p class="pro-name"> <a href="detail.html"> A World of Cup Cake
+                                                                        Hồng/To</a></p>
+                                                                <div class="price-item d-flex">
+                                                                    <span class="price-pro money">250,000</span>
+                                                                    <span class="number-pro number ">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="move-pro"><span class="fa fa-remove"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="detail.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_1_small.jpg" alt=""></a>
+                                                            <div class="pro-detail">
+                                                                <p class="pro-name"> <a href="detail.html"> A World of Cup Cake
+                                                                        Hồng/To</a></p>
+                                                                <div class="price-item d-flex">
+                                                                    <span class="price-pro money">250,000</span>
+                                                                    <span class="number-pro number">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="move-pro"><span class="fa fa-remove"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="detail.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_1_small.jpg" alt=""></a>
+                                                            <div class="pro-detail">
+                                                                <p class="pro-name"> <a href="detail.html"> A World of Cup Cake
+                                                                        Hồng/To</a></p>
+                                                                <div class="price-item d-flex">
+                                                                    <span class="price-pro money">250,000</span>
+                                                                    <span class="number-pro number">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="move-pro"><span class="fa fa-remove"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="detail.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_1_small.jpg" alt=""></a>
+                                                            <div class="pro-detail">
+                                                                <p class="pro-name"> <a href="detail.html"> A World of Cup Cake
+                                                                        Hồng/To</a></p>
+                                                                <div class="price-item d-flex">
+                                                                    <span class="price-pro money">250,000</span>
+                                                                    <span class="number-pro number">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="move-pro"><span class="fa fa-remove"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="detail.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_1_small.jpg" alt=""></a>
+                                                            <div class="pro-detail">
+                                                                <p class="pro-name"> <a href="detail.html"> A World of Cup Cake
+                                                                        Hồng/To</a></p>
+                                                                <div class="price-item d-flex">
+                                                                    <span class="price-pro money">250,000</span>
+                                                                    <span class="number-pro number">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="move-pro"><span class="fa fa-remove"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="detail.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_1_small.jpg" alt=""></a>
+                                                            <div class="pro-detail">
+                                                                <p class="pro-name"> <a href="detail.html"> A World of Cup Cake
+                                                                        Hồng/To</a></p>
+                                                                <div class="price-item d-flex">
+                                                                    <span class="price-pro money">250,000</span>
+                                                                    <span class="number-pro number">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="move-pro"><span class="fa fa-remove"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="detail.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_1_small.jpg" alt=""></a>
+                                                            <div class="pro-detail">
+                                                                <p class="pro-name"> <a href="detail.html"> A World of Cup Cake
+                                                                        Hồng/To</a></p>
+                                                                <div class="price-item d-flex">
+                                                                    <span class="price-pro money">250,000</span>
+                                                                    <span class="number-pro number">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="move-pro"><span class="fa fa-remove"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="detail.html"><img src="https://product.hstatic.net/1000281673/product/pinky_pd_1_small.jpg" alt=""></a>
+                                                            <div class="pro-detail">
+                                                                <p class="pro-name"> <a href="detail.html"> A World of Cup Cake
+                                                                        Hồng/To</a></p>
+                                                                <div class="price-item d-flex">
+                                                                    <span class="price-pro money">250,000</span>
+                                                                    <span class="number-pro number">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="move-pro"><span class="fa fa-remove"></span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="cart-total">
+                                                    <p id="total">2,870,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart-menu-footer">
+                                                <button class="btn"><i class="fa fa-check"></i> Thanh toán</button>
+                                                <a class="btn" href="http://127.0.0.1:5500/src/gio_hang/gio_hang.html"><i
+                                                        class="fa fa-shopping-cart"></i> Giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                        <div id="cart-empty">
+                                            <div>
+                                                <p>Giỏ hàng của bạn đang trống! </p>
+                                                <p><a href="#"> Tiếp tục mua sắm</a></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="dropdown">
+                                    <a href="#">
+                                        <span class="fa fa-bars" aria-hidden="true "> </span></a>
+                                    <div class="dropdown-content width-mega4">
+                                        <div class="mega-menu-ml mega-menu">
+                                            <ul class="border-box">
+                                                <li class="mega-menu-child content-mega-menu-child">
+                                                    <a href="DangNhap.html" class="d-flex">
+                                                        <span class="fa fa-sign-in"></span> Đăng nhập
+                                                    </a>
+                                                </li>
+                                                <li class="mega-menu-child content-mega-menu-child">
+                                                    <a href="dangky.html" class="d-flex">
+                                                        <span class="fa fa-user"></span> Đăng kí
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- phần thân  -->
+        <div class="header-home">
+            <div class="header-home-content">
+                <div class="breadcrumb background">
+                    <ul>
+                        <li>
+                            <a href="#"> Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog - Tin tức</a>
+                        </li>
+                    </ul>
+                    <h2>Bạn đã bao giờ từng thử một chiếc macaron có tạo hình đầu của kỳ lân chưa?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="detail-tin-container">
+            <div class="detail-tin-body body-home">
+                <div class="detail-tin-left">
+                    <div class="image-tin">
+                        <a href="./tindetail.html">
+                            <img src="http://file.hstatic.net/1000281673/article/blog-6_1024x1024.jpg" alt="" />
+
+                        </a>
+                    </div>
+                    <div class="header-tin">
+
+                        <h2>
+                            <a href="./tindetail.html">Bạn đã bao giờ từng thử một chiếc macaron có tạo hình đầu của
+                                kỳ lân chưa?</a>
+                        </h2>
+                        <ul class="blog-date">
+                            <li><i class="fa fa-user"></i> 1Piece Pinky</li>
+                            <li>
+                                <span><i class="fa fa-calendar"></i> </span> 2018-06-28
+                            </li>
+                        </ul>
+
+                    </div>
+                    <p>
+                        Macaro là một loại bánh ngọt có xuất xứ từ nước Pháp thơ mộng, bánh được làm từ lòng trắng trứng, đường bột, đường cát, bột hạnh nhân và pha thêm màu thực phẩm vào. Ở bên trong nhân bánh macaron sẽ thường được lấp đầy với mứt, ganache (sôt socola nấu
+                        chảy), kem bơ... kẹp đều giữ hai mặt bánh.
+                    </p>
+                    <div class="share-pro">
+                        <h4>Chia sẻ</h4>
+                        <div class="share-icon">
+                            <div>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tin-next">
+                        <span><a href="./tindetail.html"> Tin kế </a></span>
+                    </div>
+                    <div class="form-comment">
+                        <h4>Bình luận</h4>
+                        <input type="text" name="txtTen" placeholder="Tên">
+                        <input type="text" name="txtEmail" placeholder="Email">
+                        <textarea name="txtComment" placeholder="Bình luận "></textarea>
+                        <button class="btn">Đăng</button>
+
+                    </div>
+                </div>
+                <div class="detail-tin-right">
+                    <h4>tin tức mới nhất</h4>
+                    <ul>
+                        <li>
+                            <a href="./tindetail.html"><img src="http://file.hstatic.net/1000281673/article/blog-6_1024x1024.jpg" alt="" />
+                            </a>
+                            <div>
+                                <h5><a href="./tindetail.html"> bạn đã bao giờ từng thử một chiếc macaron có tạo hình đầu kỳ lân chưa?</a></h5>
+                                <p>Macaron là một loại bánh ngọt có xuất xứ từ...</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./tindetail.html"><img src="http://file.hstatic.net/1000281673/article/blog-5_1024x1024.jpg" alt="" />
+
+                            </a>
+                            <div>
+                                <h5><a href="./tindetail.html"> bí kíp "sống ảo": một list những món bánh dessert đẹp mắt nhất ở hà nội</a></h5>
+                                <p>Món "kem nấu" trong tiếng Ý từ lâu đã...</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./tindetail.html"><img src="http://file.hstatic.net/1000281673/article/blog-1_1024x1024.jpg" alt="" />
+                            </a>
+                            <div>
+                                <h5><a href="./tindetail.html"> một lít những đại chỉ mua bánh sinh nhật ngon và lạ ở hà nội mà bạn không thể bỏ qua </a></h5>
+                                <p>Sinh nhật mỗi người chỉ có một lần trong năm...</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./tindetail.html"><img src="http://file.hstatic.net/1000281673/article/blog-4_1024x1024.jpg" alt="" />
+                            </a>
+                            <div>
+                                <h5><a href="./tindetail.html"> những chiếc bánh ống khói chimney cake đầy sáng tạo là điều chào đón bạn khi đến california</a></h5>
+                                <p>Chimney cake (hay còn gọi là bánh ống khói), món...</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- footer -->
+        <div class="footer-pinky-body">
+            <div>
+                <div class="footer-pinky body-home">
+                    <div class="footer-pinky-content">
+                        <div class="footer-pinky-grid-item">
+                            <div class="logo-pinky">
+                                <img src="http://theme.hstatic.net/1000281673/1000364229/14/footer_img.png?v=1629" />
+                            </div>
+                            <p>
+                                Hãy để Pinky mang lại cho bạn những chiếc bánh ngọt thật đẹp
+                            </p>
+                            <div class="adress-pinky">
+                                <span><i class="fa fa-home" aria-hidden="true"></i></span> 182, Lê Đại Hành, p 15, q 11, Tp.Hồ Chí Minh.
+                            </div>
+                            <div class="email-pinky">
+                                <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> 1piece.startup@gmail.com
+                            </div>
+                            <div class="phone-pinky">
+                                <span><i class="fa fa-phone" aria-hidden="true"></i></span> 1900.636.099
+                            </div>
+                        </div>
+                        <div class="footer-pinky-grid-item">
+                            <h4 class="header-help d-flex flex-column">Hỗ trợ</h4>
+                            <ul>
+                                <li> <a href="./sanpham.html">Sản phẩm khuyến mãi</a> </li>
+                                <li><a href="./sanpham.html">Sản phẩm nổi bật</a></li>
+                                <li><a href="./sanpham.html">Tất cả sản phẩm</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-pinky-grid-item">
+                            <h4 class="header-help d-flex flex-column">Giờ mở cửa</h4>
+                            <ul>
+                                <li><span>T2 - T6</span> 8h00 AM - 20h PM</li>
+                                <li><span>T7 - CN</span> 1h PM - 18h PM</li>
+                            </ul>
+                            <h5>Happy Hours:</h5>
+                            <div>
+                                <span> Thưởng thức bánh miễn phí</span><br /> Thứ 6 hàng tuần tại cửa hàng vào lúc 14hPM
+                            </div>
+                        </div>
+                        <div class="footer-pinky-grid-item">
+                            <h4 class="header-help d-flex flex-column">Fanpage</h4>
+                            <div>
+                                <div class="fanpage-pinky">
+                                    <div>
+                                        <div class="fanpage-pinky-image">
+                                            <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-0/p200x200/114218776_2059247664209255_7571311067200836108_o.png?_nc_cat=110&_nc_sid=dd9801&_nc_ohc=_ga3EN8L9yQAX-2wlDb&_nc_ht=scontent.fhan2-4.fna&oh=3957fa13a9d514a4e767e4f6ec9f591e&oe=5F58E885"
+                                                alt="" />
+                                        </div>
+                                        <div class="fanpage-pinky-top">
+                                            <div class="pinky-top"></div>
+                                            <div class="pinky-number">
+                                                <div class="d-flex">
+                                                    <a href="https://www.facebook.com/haravan.official">
+                                                        <img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.0-1/cp0/p80x80/12122825_740319142768787_1875715644858830276_n.png?_nc_cat=1&_nc_sid=dbb9e7&_nc_ohc=S-gPg7l19NYAX8xISrs&_nc_ht=scontent.fhan2-2.fna&oh=17116cc91073928e0425990ebd142114&oe=5F58691D" alt=""
+                                                        /></a>
+                                                    <div class="haravan">
+                                                        <div class="d-flex">
+                                                            <a href="https://www.facebook.com/haravan.official"> Haravan </a>
+                                                            <span> </span>
+                                                        </div>
+                                                        <div>71.004 luợt thích</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pinky-button">
+                                                <span class="img-fb">
+                                                <a href="#"> <i></i>Thích Trang </a>
+                                            </span>
+                                                <span class="img-fb">
+                                                <a href="#"> <i></i>Chia sẻ </a>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pinky-p">
+                                        <p>
+                                            Hãy là người đầu tiên trong số bạn bè của bạn thích nội dung này
+                                        </p>
+                                    </div>
+                                    <div class="theo-doi">
+                                        <h4>Theo dõi</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/haravan.official"> <span class="fa fa-twitter"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="./sanpham.html"> <span class="fa fa-facebook"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="./sanpham.html">
+                                                    <span class="fa fa-google-plus"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="./sanpham.html"> <span class="fa fa-youtube"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-author">
+                    <div class="container-author">
+                        <p>Copyright &copy; 2018, 1Piece Pinky Powered by Haravan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="search">
+            <div class="modal-content">
+
+                <div class="form-input">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="tìm kiếm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nút top scroll -->
+    <button id="topScroll"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+    </div>
+
+    <!-- js cho menu -->
+    <script src="./assets/js/menu.js"></script>
+
+    <!-- js cho scroll background  -->
+    <script src="./assets/js/jsbackground.js"></script>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+</body>
+
+</html>

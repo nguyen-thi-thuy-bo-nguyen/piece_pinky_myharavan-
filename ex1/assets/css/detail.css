@@ -1,0 +1,490 @@
+.detail-pro-container {
+    width: 100%;
+}
+
+.detail-pro-body {
+    max-width: 1175px;
+    margin: 150px auto 70px;
+}
+
+.detail-pro-intro {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 570px));
+    grid-gap: 20px;
+}
+
+.image-large img {
+    max-width: 570px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+/* modal image */
+
+.proImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#modalImg.modal {
+    position: fixed !important;
+}
+
+#modalImg .modal-content {
+    margin: 100px auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border: solid 1px #a8b2b7;
+}
+
+#modalImg .close {
+    position: absolute;
+    top: 2.5%;
+    left: 67%;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#modalImg .close:hover,
+#modalImg .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*  */
+
+.list-image-pro ul {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: repeat(3, minmax(auto, 130px));
+}
+
+.list-image-pro a {
+    list-style: none;
+}
+
+.list-image-pro img {
+    height: auto;
+    max-width: 130px;
+    width: 100%;
+}
+
+.select-info {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 40px));
+    grid-gap: 5px;
+}
+
+.select-info>div {
+    height: 40px;
+}
+
+.select-info img {
+    max-width: 40px;
+    height: auto;
+}
+
+.select-info label {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #a8b2b7;
+    position: relative;
+    overflow: hidden;
+}
+
+.select-info input {
+    display: none;
+}
+
+.checkmark {
+    content: "";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+    background-image: url(https://theme.hstatic.net/1000281673/1000364229/14/checkbox-pro.png);
+    background-repeat: no-repeat;
+}
+
+.select-info label input:checked~.checkmark {
+    display: block;
+}
+
+.select-info label {
+    color: #a8b2b7;
+    text-align: center;
+    line-height: 2;
+}
+
+.detail-pro-info>h3 {
+    color: rgb(181, 207, 93) !important;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.pro-price {
+    display: flex;
+}
+
+.pro-price h4 {
+    color: rgb(255, 115, 128);
+    margin-right: 10px;
+}
+
+.pro-price del {
+    color: #a8b2b7;
+    line-height: 2;
+}
+
+.detail-pro-info h5 {
+    font-size: 14px;
+    color: #a8b2b7;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.detail-pro-info h5>span {
+    font-weight: normal;
+    text-transform: none;
+    float: right;
+    width: 70%;
+    display: inline-block;
+}
+
+
+/* phần tạo css cho input number */
+
+.number-pro {
+    position: relative;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    margin-left: 45px !important;
+    background-color: rgb(244, 244, 244);
+    color: #a8b2b7;
+}
+
+.number-pro input {
+    width: 45px;
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+}
+
+.quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+}
+
+.quantity-button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    width: 21px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-family: "FontAwesome" !important;
+    line-height: 1.5;
+    padding: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.quantity-button.quantity-up {
+    position: absolute;
+    height: 100%;
+    width: 42px;
+    top: 0;
+    right: -84px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-family: "FontAwesome";
+    line-height: 1.6;
+    background-color: rgb(255, 115, 128) !important;
+}
+
+.quantity-button.quantity-down {
+    position: absolute;
+    top: 0;
+    left: -42px;
+    height: 100%;
+    width: 42px;
+    font-family: "FontAwesome";
+    background-color: rgb(255, 115, 128);
+}
+
+
+/*  */
+
+.number-pro .btn {
+    float: left;
+    margin-left: 70px;
+}
+
+div.number-pro {
+    width: 100%;
+    height: 42px;
+}
+
+.detail-pro-info p {
+    font-size: 13px;
+    color: #a8b2b7;
+}
+
+.share-pro h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(181, 207, 93) !important;
+    font-size: 22px;
+}
+
+.share-icon {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 30px));
+    grid-template-rows: minmax(auto, 30px);
+    grid-gap: 5px;
+}
+
+.share-icon>div {
+    position: relative;
+}
+
+.share-icon i {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 13px;
+    color: white;
+}
+
+.share-icon>div:first-child {
+    background-color: rgb(59, 89, 152);
+}
+
+.share-icon>div:nth-child(2) {
+    background-color: rgb(132, 132, 132);
+}
+
+.share-icon>div:nth-child(3) {
+    background-color: rgb(29, 161, 242);
+}
+
+.share-icon>div:last-child {
+    background-color: 0077b5;
+}
+
+.tab {
+    overflow: hidden;
+    width: 100%;
+}
+
+.tab button {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px;
+}
+
+.tab button:first-child {
+    max-width: 150px;
+}
+
+.tab button:nth-child(2) {
+    max-width: 100px;
+}
+
+.tab button:last-child {
+    max-width: 180px;
+}
+
+.tabcontent {
+    background-color: rgb(244, 244, 244);
+    color: #a8b2b7;
+    padding: 20px;
+    display: none;
+}
+
+.tab button.active {
+    background-color: rgb(255, 115, 128);
+    border: none;
+}
+
+.info {
+    height: 20px;
+    color: black;
+}
+
+.info span {
+    float: left;
+}
+
+.info div {
+    float: right;
+}
+
+.detail-tab {
+    margin: 20px 0;
+}
+
+#policy ul {
+    list-style: disc !important;
+    padding: 0 30px;
+}
+
+#policy ul li {
+    list-style: disc !important;
+}
+
+#comment textarea {
+    padding: 0 10px;
+    width: 100%;
+    min-height: 100px;
+}
+
+.detail-pro-relative ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 288px));
+    position: relative;
+    grid-gap: 15px;
+}
+
+.detail-pro-relative>ul>li {
+    position: relative;
+    text-align: center;
+    border: solid 3px rgb(244, 244, 244);
+}
+
+.detail-pro-relative .image-product {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.detail-pro-relative .image-product a {
+    overflow: hidden;
+}
+
+.detail-pro-relative .image-product img {
+    /* max-height: 285px; */
+    height: auto;
+    max-width: 288px;
+    width: 100%;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    margin: 0 auto;
+}
+
+.detail-pro-relative .circle-top-order {
+    top: 40%;
+    left: 20%;
+    opacity: 0;
+}
+
+.detail-pro-relative li:hover .circle-top-order {
+    top: 30%;
+    opacity: 1;
+}
+
+.detail-pro-relative li:hover .image-product img {
+    transform: matrix(1.1, 0.1, -0.1, 1.1, 0, 0);
+    -webkit-transform: matrix(1.1, 0.1, -0.1, 1.1, 0, 0);
+    -moz-transform: matrix(1.1, 0.1, -0.1, 1.1, 0, 0);
+    -o-transform: matrix(1.1, 0.1, -0.1, 1.1, 0, 0);
+    -ms-transform: matrix(1.1, 0.1, -0.1, 1.1, 0, 0);
+}
+
+.detail-pro-relative .product-price {
+    font-size: 18px;
+}
+
+.detail-pro-relative .circle-pro {
+    border: none;
+}
+
+.detail-pro-relative .circle-pro i {
+    position: relative;
+    top: 35%;
+    color: white;
+    left: 40%;
+}
+
+.detail-pro-relative li>h3 {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-top: 20px;
+    color: #a8b2b7;
+}
+
+.detail-pro-relative .product-price {
+    font-size: 14px;
+    color: #a8b2b7;
+}
+
+.detail-pro-relative .product-price span {
+    color: rgb(255, 115, 128);
+    font-weight: bold;
+}
+
+
+/*  */
+
+@media screen and (max-width: 414px) {
+    .detail-pro-intro {
+        display: grid;
+        grid-template-columns: minmax(auto, 100%);
+        grid-gap: 20px;
+        padding: 10px;
+    }
+    .detail-pro-body {
+        padding: 20px;
+    }
+    .tab {
+        display: flex;
+        flex-direction: column;
+    }
+    .tab button {
+        margin: 3px auto;
+        font-size: 13px;
+    }
+    .tabcontent {
+        font-size: 13px;
+    }
+    .detail-pro-relative ul {
+        grid-template-columns: repeat(2, minmax(auto, 288px));
+        grid-gap: 10px;
+    }
+}
